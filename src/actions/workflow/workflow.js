@@ -9,7 +9,7 @@ import {
   TRANSITION_WORKFLOW,
 } from '@plone/volto/constants/ActionTypes';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Get workflow function.

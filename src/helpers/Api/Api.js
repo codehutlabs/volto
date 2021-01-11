@@ -6,7 +6,7 @@
 import superagent from 'superagent';
 import cookie from 'react-cookie';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 const methods = ['get', 'post', 'put', 'patch', 'del'];
 

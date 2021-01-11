@@ -1,4 +1,4 @@
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import navigation from './navigation';
 import { GET_NAVIGATION } from '@plone/volto/constants/ActionTypes';
 

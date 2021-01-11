@@ -13,7 +13,7 @@ import { toast } from 'react-toastify';
 import { FormattedMessage, defineMessages, injectIntl } from 'react-intl';
 import getWorkflowMapping from '@plone/volto/constants/Workflows';
 import { Icon, Toast } from '@plone/volto/components';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 import {
   getContent,

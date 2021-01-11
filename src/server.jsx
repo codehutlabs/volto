@@ -17,8 +17,8 @@ import { createProxyMiddleware } from 'http-proxy-middleware';
 import { updateIntl } from 'react-intl-redux';
 import { resetServerContext } from 'react-beautiful-dnd';
 
-import routes from '~/routes';
-import { settings } from '~/config';
+import routes from '@plone/volto/routes';
+import { settings } from '@plone/volto/config';
 import { flattenToAppURL } from '@plone/volto/helpers';
 
 import {
@@ -41,7 +41,7 @@ let locales = {};
 
 if (settings) {
   settings.supportedLanguages.forEach((lang) => {
-    import('~/../locales/' + lang + '.json').then((locale) => {
+    import('@plone/volto/../locales/' + lang + '.json').then((locale) => {
       locales = { ...locales, [lang]: locale.default };
     });
   });

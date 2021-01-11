@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import redraft from 'redraft';
 import React from 'react';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * View text block class.

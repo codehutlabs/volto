@@ -7,7 +7,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Container } from 'semantic-ui-react';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Not found function.

@@ -4,7 +4,7 @@
  */
 
 import { endsWith, find, keys } from 'lodash';
-import { blocks } from '~/config';
+import { blocks } from '@plone/volto/config';
 
 /**
  * Get blocks field.

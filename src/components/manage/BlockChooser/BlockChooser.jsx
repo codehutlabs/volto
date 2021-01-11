@@ -5,7 +5,7 @@ import { Accordion, Button } from 'semantic-ui-react';
 import { injectIntl } from 'react-intl';
 import { Icon } from '@plone/volto/components';
 import AnimateHeight from 'react-animate-height';
-import { blocks } from '~/config';
+import { blocks } from '@plone/volto/config';
 
 import upSVG from '@plone/volto/icons/up-key.svg';
 import downSVG from '@plone/volto/icons/down-key.svg';

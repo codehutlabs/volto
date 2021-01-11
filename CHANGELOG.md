@@ -28,6 +28,10 @@
 ### Internal
 
 - Translations german: Unauthorized, Login/Register @ksuess
+- Explicitly define Volto as a ECMAScript module. @thet
+- Change root imports to ``@plone/volto``.
+  Replace all ``~`` root imports with the ``@plone/volto`` alias and remove related dev dependencies.
+  This change allows Volto to be defined as a importable module dependency in another library where the root is different. @thet
 
 ## 10.6.1 (2020-12-21)
 

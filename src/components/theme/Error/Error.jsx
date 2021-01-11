@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import { views } from '~/config';
+import { views } from '@plone/volto/config';
 /**
  * Error function.
  * @function Error

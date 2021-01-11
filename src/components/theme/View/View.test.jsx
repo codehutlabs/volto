@@ -5,7 +5,7 @@ import { Provider } from 'react-intl-redux';
 
 import View from './View';
 
-jest.mock('~/config', () => ({
+jest.mock('@plone/volto/config', () => ({
   settings: {
     nonContentRoutes: [],
     supportedLanguages: ['en'],

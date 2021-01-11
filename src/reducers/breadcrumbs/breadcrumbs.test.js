@@ -1,4 +1,4 @@
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import breadcrumbs from './breadcrumbs';
 import { GET_BREADCRUMBS } from '@plone/volto/constants/ActionTypes';
 

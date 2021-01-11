@@ -1,5 +1,5 @@
 import { map, omit } from 'lodash';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 const GET_QUERYSTRING_RESULTS = 'GET_QUERYSTRING_RESULTS';
 const RESET_QUERYSTRING_RESULTS = 'RESET_QUERYSTRING_RESULTS';

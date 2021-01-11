@@ -11,7 +11,7 @@ import { defineMessages, injectIntl } from 'react-intl';
 import { Container } from 'semantic-ui-react';
 import { Helmet } from '@plone/volto/helpers';
 import { Link } from 'react-router-dom';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 import { getNavigation } from '@plone/volto/actions';
 

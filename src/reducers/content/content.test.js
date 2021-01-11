@@ -1,4 +1,4 @@
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import content from './content';
 import {
   CREATE_CONTENT,

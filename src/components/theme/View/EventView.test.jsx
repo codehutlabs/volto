@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { Provider } from 'react-intl-redux';
 import configureStore from 'redux-mock-store';
 import EventView from './EventView';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 const mockStore = configureStore();
 
 const store = mockStore({

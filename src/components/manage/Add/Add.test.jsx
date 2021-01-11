@@ -7,7 +7,7 @@ import Add from './Add';
 
 const mockStore = configureStore();
 
-jest.mock('~/config', () => ({
+jest.mock('@plone/volto/config', () => ({
   settings: {
     isMultilingual: false,
     supportedLanguages: ['de'],

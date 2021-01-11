@@ -8,7 +8,7 @@ import Navigation from './Navigation';
 
 const mockStore = configureStore();
 
-jest.mock('~/config', () => ({
+jest.mock('@plone/volto/config', () => ({
   settings: {
     nonContentRoutes: [],
     supportedLanguages: ['en'],

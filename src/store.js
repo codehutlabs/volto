@@ -4,8 +4,8 @@ import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import { connectRouter, routerMiddleware } from 'connected-react-router';
 import { save, load } from 'redux-localstorage-simple';
 
-import { settings } from '~/config';
-import reducers from '~/reducers';
+import { settings } from '@plone/volto/config';
+import reducers from '@plone/volto/reducers';
 
 import { api, crashReporter } from '@plone/volto/middleware';
 

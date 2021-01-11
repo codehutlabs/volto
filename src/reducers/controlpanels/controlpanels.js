@@ -2,7 +2,7 @@
  * Controlpanels reducer.
  * @module reducers/controlpanels/controlpanels
  */
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import {
   GET_CONTROLPANEL,
   POST_CONTROLPANEL,

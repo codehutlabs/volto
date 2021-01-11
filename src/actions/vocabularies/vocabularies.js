@@ -3,7 +3,7 @@
  * @module actions/vocabularies/vocabularies
  */
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import {
   GET_VOCABULARY,
   GET_VOCABULARY_TOKEN_TITLE,

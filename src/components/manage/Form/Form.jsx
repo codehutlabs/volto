@@ -44,7 +44,7 @@ import {
 import { v4 as uuid } from 'uuid';
 import { toast } from 'react-toastify';
 import { BlocksToolbar } from '@plone/volto/components';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Form container class.

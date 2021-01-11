@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { blocks } from '~/config';
+import { blocks } from '@plone/volto/config';
 import TemplateWidget from '@plone/volto/components/manage/Blocks/Listing/TemplateWidget';
 
 const ListingStyle = ({ data, block, onChangeBlock, required = false }) => {

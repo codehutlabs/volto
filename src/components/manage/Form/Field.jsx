@@ -6,7 +6,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { DragSource, DropTarget } from 'react-dnd';
-import { settings, widgets } from '~/config';
+import { settings, widgets } from '@plone/volto/config';
 import { injectIntl } from 'react-intl';
 
 const MODE_HIDDEN = 'hidden'; //hidden mode. If mode is hidden, field is not rendered

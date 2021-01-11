@@ -1,5 +1,5 @@
 import { GET_QUERYSTRING_RESULTS } from '@plone/volto/constants/ActionTypes';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Get querystring results.

@@ -2,7 +2,7 @@ import React from 'react';
 import { Message, Container } from 'semantic-ui-react';
 import { FormattedMessage } from 'react-intl';
 import { useSelector } from 'react-redux';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 const OutdatedBrowser = () => {
   const browserdetect = useSelector((state) => state.browserdetect);

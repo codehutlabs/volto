@@ -10,7 +10,7 @@ import { compose } from 'redux';
 import { Label, Dropdown, Popup, Icon } from 'semantic-ui-react';
 import { compact, concat, fromPairs, map, values, uniqBy } from 'lodash';
 import { defineMessages, injectIntl } from 'react-intl';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import { FormFieldWrapper } from '@plone/volto/components';
 import { resetSearchContent, searchContent } from '@plone/volto/actions';
 

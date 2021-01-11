@@ -10,7 +10,7 @@ import { compose } from 'redux';
 import { FormattedMessage, defineMessages, injectIntl } from 'react-intl';
 import moment from 'moment';
 import { Button, Grid, Segment, Container } from 'semantic-ui-react';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 import { addComment, deleteComment, listComments } from '@plone/volto/actions';
 import { getBaseUrl } from '@plone/volto/helpers';

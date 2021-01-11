@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import AppExtras from './AppExtras';
 
-jest.mock('~/config', () => ({
+jest.mock('@plone/volto/config', () => ({
   views: {},
   settings: {
     appExtras: [

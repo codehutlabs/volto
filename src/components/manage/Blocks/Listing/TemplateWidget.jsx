@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Grid, Form } from 'semantic-ui-react';
 import { defineMessages, injectIntl } from 'react-intl';
 import loadable from '@loadable/component';
-import { blocks } from '~/config';
+import { blocks } from '@plone/volto/config';
 
 import {
   Option,

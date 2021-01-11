@@ -9,7 +9,7 @@ import { Table } from 'semantic-ui-react';
 import { map } from 'lodash';
 import redraft from 'redraft';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * View table block class.

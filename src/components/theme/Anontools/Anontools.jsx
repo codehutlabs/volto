@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import { Menu } from 'semantic-ui-react';
 import { FormattedMessage } from 'react-intl';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Anontools container class.

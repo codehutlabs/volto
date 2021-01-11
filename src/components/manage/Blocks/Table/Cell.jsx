@@ -11,7 +11,7 @@ import createInlineToolbarPlugin from 'draft-js-inline-toolbar-plugin';
 import isSoftNewlineEvent from 'draft-js/lib/isSoftNewlineEvent';
 import { includes } from 'lodash';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Edit text cell class.

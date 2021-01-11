@@ -37,7 +37,7 @@ import vocabularies from '@plone/volto/reducers/vocabularies/vocabularies';
 import workflow from '@plone/volto/reducers/workflow/workflow';
 import toolbar from '@plone/volto/reducers/toolbar/toolbar';
 import blocksClipboard from '@plone/volto/reducers/blocksClipboard/blocksClipboard';
-import { addonReducers } from '~/config';
+import { addonReducers } from '@plone/volto/config';
 
 /**
  * Root reducer.

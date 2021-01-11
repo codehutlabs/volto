@@ -20,7 +20,7 @@ import { defineMessages, injectIntl } from 'react-intl';
 import configureStore from 'redux-mock-store';
 import { MemoryRouter } from 'react-router-dom';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import { FormFieldWrapper } from '@plone/volto/components';
 
 const messages = defineMessages({

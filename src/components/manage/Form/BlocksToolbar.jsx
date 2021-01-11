@@ -14,7 +14,7 @@ import { load } from 'redux-localstorage-simple';
 import { isEqual, omit, without } from 'lodash';
 
 import { setBlocksClipboard, resetBlocksClipboard } from '@plone/volto/actions';
-import { blocks } from '~/config';
+import { blocks } from '@plone/volto/config';
 
 import copySVG from '@plone/volto/icons/copy.svg';
 import cutSVG from '@plone/volto/icons/cut.svg';

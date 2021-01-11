@@ -4,7 +4,7 @@
  */
 
 import { map } from 'lodash';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 import { GET_BREADCRUMBS } from '@plone/volto/constants/ActionTypes';
 

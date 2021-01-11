@@ -1,4 +1,4 @@
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 const reserved_option_names = ['tags', 'extras'];
 
 const initSentry = (Sentry) => {

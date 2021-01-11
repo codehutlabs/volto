@@ -16,7 +16,7 @@ import join from 'lodash/join';
 import trim from 'lodash/trim';
 import cx from 'classnames';
 
-import { settings, views } from '~/config';
+import { settings, views } from '@plone/volto/config';
 
 import Error from '@plone/volto/error';
 

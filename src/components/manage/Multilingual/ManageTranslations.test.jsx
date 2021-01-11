@@ -6,7 +6,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 import ManageTranslations from './ManageTranslations';
 
-jest.mock('~/config', () => ({
+jest.mock('@plone/volto/config', () => ({
   settings: {
     isMultilingual: true,
     supportedLanguages: ['de', 'es'],

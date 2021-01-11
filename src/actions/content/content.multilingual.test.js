@@ -1,7 +1,7 @@
 import { getContent } from './content';
 import { GET_CONTENT } from '@plone/volto/constants/ActionTypes';
 
-jest.mock('~/config', () => ({
+jest.mock('@plone/volto/config', () => ({
   settings: {
     isMultilingual: true,
     supportedLanguages: ['de', 'es'],

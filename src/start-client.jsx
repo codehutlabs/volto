@@ -6,9 +6,9 @@ import { ConnectedRouter } from 'connected-react-router';
 import { createBrowserHistory } from 'history';
 import { ReduxAsyncConnect } from 'redux-connect';
 import { loadableReady } from '@loadable/component';
-import routes from '~/routes';
-import { settings } from '~/config';
-import '~/theme';
+import routes from '@plone/volto/routes';
+import { settings } from '@plone/volto/config';
+import '@plone/volto/theme';
 
 import configureStore from '@plone/volto/store';
 import { Api, persistAuthToken, ScrollToTop } from '@plone/volto/helpers';

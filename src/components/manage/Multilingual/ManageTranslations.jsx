@@ -6,7 +6,7 @@ import { flattenToAppURL, getBaseUrl } from '@plone/volto/helpers';
 import { reduce } from 'lodash';
 import { Link, useLocation } from 'react-router-dom';
 import { Icon, Toast, Toolbar } from '@plone/volto/components';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import withObjectBrowser from '@plone/volto/components/manage/Sidebar/ObjectBrowser';
 import {
   deleteLinkTranslation,

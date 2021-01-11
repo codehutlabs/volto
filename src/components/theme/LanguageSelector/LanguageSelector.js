@@ -14,7 +14,7 @@ import { updateIntl } from 'react-intl-redux';
 import langmap from 'langmap';
 import { Helmet } from '@plone/volto/helpers';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 import { flattenToAppURL } from '@plone/volto/helpers';
 
@@ -22,7 +22,7 @@ let locales = {};
 
 if (settings) {
   settings.supportedLanguages.forEach((lang) => {
-    import('~/../locales/' + lang + '.json').then((locale) => {
+    import('@plone/volto/../locales/' + lang + '.json').then((locale) => {
       locales = { ...locales, [lang]: locale.default };
     });
   });

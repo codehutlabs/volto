@@ -12,7 +12,7 @@ import {
   getParentUrl,
   flattenToAppURL,
 } from '@plone/volto/helpers';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * View video block class.

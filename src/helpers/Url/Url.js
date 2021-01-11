@@ -4,7 +4,7 @@
  */
 
 import { last, memoize } from 'lodash';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Get base url.

@@ -16,7 +16,7 @@ import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import { v4 as uuid } from 'uuid';
 import qs from 'query-string';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import { toast } from 'react-toastify';
 
 import { createContent, getSchema } from '@plone/volto/actions';
@@ -28,7 +28,7 @@ import {
   getBlocksLayoutFieldname,
 } from '@plone/volto/helpers';
 
-import { blocks } from '~/config';
+import { blocks } from '@plone/volto/config';
 
 import saveSVG from '@plone/volto/icons/save.svg';
 import clearSVG from '@plone/volto/icons/clear.svg';

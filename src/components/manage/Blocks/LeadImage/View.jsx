@@ -7,7 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import cx from 'classnames';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 import { flattenToAppURL } from '@plone/volto/helpers';
 

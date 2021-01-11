@@ -6,7 +6,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 import { __test__ as App } from './App';
 
-jest.mock('~/config', () => ({
+jest.mock('@plone/volto/config', () => ({
   settings: {
     nonContentRoutes: [],
     supportedLanguages: ['en'],

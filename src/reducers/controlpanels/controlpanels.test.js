@@ -1,4 +1,4 @@
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import controlpanels from './controlpanels';
 import {
   GET_CONTROLPANEL,

@@ -10,7 +10,7 @@ import { defineMessages, injectIntl } from 'react-intl';
 import { Container, Image } from 'semantic-ui-react';
 import { map } from 'lodash';
 
-import { blocks } from '~/config';
+import { blocks } from '@plone/volto/config';
 
 import {
   getBlocksFieldname,

@@ -8,7 +8,7 @@ import { map } from 'lodash';
 import cookie from 'react-cookie';
 import zlib from 'zlib';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Generate sitemap

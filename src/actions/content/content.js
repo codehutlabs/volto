@@ -13,7 +13,7 @@ import {
   UPDATECOLUMNS_CONTENT,
 } from '@plone/volto/constants/ActionTypes';
 import { nestContent } from '@plone/volto/helpers';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Create content function.

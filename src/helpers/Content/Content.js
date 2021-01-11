@@ -4,7 +4,7 @@
  */
 
 import { omitBy, mapKeys, pickBy, map, keys, endsWith, find } from 'lodash';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 /**
  * Nest content.

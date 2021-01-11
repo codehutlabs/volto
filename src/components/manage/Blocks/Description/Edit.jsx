@@ -10,7 +10,7 @@ import { stateFromHTML } from 'draft-js-import-html';
 import { Editor, DefaultDraftBlockRenderMap, EditorState } from 'draft-js';
 import { defineMessages, injectIntl } from 'react-intl';
 import cx from 'classnames';
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 const messages = defineMessages({
   description: {

@@ -39,7 +39,7 @@ import {
 import App from '@plone/volto/components/theme/App/App';
 import View from '@plone/volto/components/theme/View/View';
 
-import { addonRoutes } from '~/config';
+import { addonRoutes } from '@plone/volto/config';
 
 /**
  * Default routes array.

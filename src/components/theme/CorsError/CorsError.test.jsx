@@ -5,7 +5,7 @@ import { Provider } from 'react-intl-redux';
 
 import CorsError from './CorsError';
 
-jest.mock('~/config', () => ({
+jest.mock('@plone/volto/config', () => ({
   settings: {
     apiPath: 'http://localhost:8080/Plone',
   },

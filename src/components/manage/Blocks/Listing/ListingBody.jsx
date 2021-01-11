@@ -8,7 +8,7 @@ import { Icon } from '@plone/volto/components';
 import paginationLeftSVG from '@plone/volto/icons/left-key.svg';
 import paginationRightSVG from '@plone/volto/icons/right-key.svg';
 
-import { blocks, settings } from '~/config';
+import { blocks, settings } from '@plone/volto/config';
 
 const ListingBody = ({ data, properties, intl, path, isEditMode }) => {
   const [currentPage, setCurrentPage] = React.useState(1);

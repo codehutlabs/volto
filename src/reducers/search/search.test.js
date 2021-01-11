@@ -1,4 +1,4 @@
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 import search from './search';
 import {
   RESET_SEARCH_CONTENT,

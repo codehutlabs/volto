@@ -8,7 +8,7 @@ import layouts from '@plone/volto/constants/Layouts';
 import { getLayoutFieldname } from '@plone/volto/helpers';
 import { Icon } from '@plone/volto/components';
 import { FormattedMessage } from 'react-intl';
-import { views } from '~/config';
+import { views } from '@plone/volto/config';
 
 import downSVG from '@plone/volto/icons/down-key.svg';
 import upSVG from '@plone/volto/icons/up-key.svg';

@@ -17,7 +17,7 @@ import { getBaseUrl } from '@plone/volto/helpers';
 import rightArrowSVG from '@plone/volto/icons/right-key.svg';
 import userSVG from '@plone/volto/icons/user.svg';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 const messages = defineMessages({
   personalTools: {

@@ -6,7 +6,7 @@
 import cookie from 'react-cookie';
 import jwtDecode from 'jwt-decode';
 
-import { settings } from '~/config';
+import { settings } from '@plone/volto/config';
 
 import {
   LOGIN,
