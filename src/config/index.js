@@ -31,6 +31,7 @@ import { loadables } from './Loadables';
 
 import { sentryOptions } from './Sentry';
 import { contentIcons } from './ContentIcons';
+import { imageScales } from './ImageScales';
 
 import applyAddonConfiguration from 'load-volto-addons';
 
@@ -96,7 +97,7 @@ let config = {
     sentryOptions: {
       ...sentryOptions,
     },
-    contentIcons: contentIcons,
+    contentIcons,
     loadables,
     lazyBundles: {
       cms: [
@@ -108,6 +109,7 @@ let config = {
         // 'diffLib',
       ],
     },
+    imageScales,
     appExtras: [],
     maxResponseSize: 2000000000, // This is superagent default (200 mb)
     serverConfig,

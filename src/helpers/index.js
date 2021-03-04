@@ -70,3 +70,5 @@ export {
 export { messages } from './MessageLabels/MessageLabels';
 export { asyncConnect } from './AsyncConnect';
 // export { injectLazyLibs } from './Loadable/Loadable';
+
+export { getImageAttributes } from './Image/Image';
