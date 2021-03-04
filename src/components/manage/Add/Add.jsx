@@ -10,16 +10,24 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { keys, isEmpty } from 'lodash';
 import { defineMessages, injectIntl } from 'react-intl';
-import { Button } from 'semantic-ui-react';
+import { Button, Menu } from 'semantic-ui-react';
+
 import { Portal } from 'react-portal';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import { v4 as uuid } from 'uuid';
 import qs from 'query-string';
 import { toast } from 'react-toastify';
-
+import { Grid, Container } from 'semantic-ui-react';
 import { createContent, getSchema } from '@plone/volto/actions';
-import { Form, Icon, Toolbar, Sidebar, Toast } from '@plone/volto/components';
+import {
+  Form,
+  Icon,
+  Toolbar,
+  Sidebar,
+  Toast,
+  TranslationObject,
+} from '@plone/volto/components';
 import {
   getBaseUrl,
   hasBlocksData,
@@ -50,6 +58,10 @@ const messages = defineMessages({
   error: {
     id: 'Error',
     defaultMessage: 'Error',
+  },
+  translateTo: {
+    id: 'Translate to',
+    defaultMessage: 'Translate to',
   },
 });
 
@@ -220,6 +232,8 @@ class Add extends Component {
       const blocksLayoutFieldname = getBlocksLayoutFieldname(
         this.props.schema.properties,
       );
+      const translationObject = this.props.location?.state?.translationObject;
+      const translateTo = this.props.location?.state?.language;
 
       // Lookup initialBlocks and initialBlocksLayout within schema
       const schemaBlocks = this.props.schema.properties[blocksFieldname]
@@ -244,7 +258,27 @@ class Add extends Component {
         });
       }
 
-      return (
+      //copy blocks from translationObject
+      if (translationObject && blocksFieldname && blocksLayoutFieldname) {
+        initialBlocks = {};
+        initialBlocksLayout = [];
+        const originalBlocks = translationObject[blocksFieldname];
+        const originalBlocksLayout =
+          translationObject[blocksLayoutFieldname].items;
+
+        originalBlocksLayout.forEach((value) => {
+          if (!isEmpty(originalBlocks[value])) {
+            let newUid = uuid();
+            initialBlocksLayout.push(newUid);
+            initialBlocks[newUid] = originalBlocks[value];
+
+            // Layout ID - keep a reference to the original block id within layout
+            initialBlocks[newUid]['@canonical'] = value;
+          }
+        });
+      }
+
+      const pageAdd = (
         <div id="page-add">
           <Helmet
             title={this.props.intl.formatMessage(messages.add, {
@@ -282,6 +316,10 @@ class Add extends Component {
                 : null
             }
             loading={this.props.createRequest.loading}
+            isFormSelected={this.state.formSelected === 'addForm'}
+            onSelectForm={() => {
+              this.setState({ formSelected: 'addForm' });
+            }}
           />
           {this.state.isClient && (
             <Portal node={document.getElementById('toolbar')}>
@@ -326,6 +364,45 @@ class Add extends Component {
             </Portal>
           )}
         </div>
+      );
+
+      return translationObject ? (
+        <Container>
+          <Grid
+            celled="internally"
+            stackable
+            columns={2}
+            id="page-add-translation"
+          >
+            <Grid.Column className="source-object">
+              <TranslationObject
+                translationObject={translationObject}
+                schema={this.props.schema}
+                pathname={this.props.pathname}
+                visual={visual}
+                isFormSelected={
+                  this.state.formSelected === 'translationObjectForm'
+                }
+                onSelectForm={() => {
+                  this.setState({ formSelected: 'translationObjectForm' });
+                }}
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <div className="new-translation">
+                <Menu pointing secondary attached tabular>
+                  <Menu.Item name={translateTo.toUpperCase()} active={true}>
+                    {this.props.intl.formatMessage(messages.translateTo)}{' '}
+                    {translateTo.toUpperCase()}
+                  </Menu.Item>
+                </Menu>
+                {pageAdd}
+              </div>
+            </Grid.Column>
+          </Grid>
+        </Container>
+      ) : (
+        pageAdd
       );
     }
     return <div />;

@@ -57,6 +57,15 @@ class Edit extends Component {
     manage: PropTypes.bool,
     onMoveBlock: PropTypes.func.isRequired,
     onDeleteBlock: PropTypes.func.isRequired,
+    editable: PropTypes.bool,
+  };
+  /**
+   * Default properties.
+   * @property {Object} defaultProps Default properties.
+   * @static
+   */
+  static defaultProps = {
+    editable: true,
   };
 
   /**
@@ -83,7 +92,7 @@ class Edit extends Component {
     const tab = this.props.manage
       ? 1
       : config.blocks.blocksConfig?.[type]?.sidebarTab || 0;
-    if (this.props.selected) {
+    if (this.props.selected && this.props.editable) {
       this.props.setSidebarTab(tab);
     }
   }
@@ -102,8 +111,9 @@ class Edit extends Component {
       this.blockNode.current.focus();
     }
     if (
-      (!this.props.selected && nextProps.selected) ||
-      type !== nextProps.type
+      ((!this.props.selected && nextProps.selected) ||
+        type !== nextProps.type) &&
+      this.props.editable
     ) {
       const tab = this.props.manage
         ? 1
@@ -121,7 +131,7 @@ class Edit extends Component {
    */
   render() {
     const { blocks } = config;
-    const { id, type, selected } = this.props;
+    const { id, type, selected, editable } = this.props;
     const required = isBoolean(this.props.data.required)
       ? this.props.data.required
       : includes(blocks.requiredBlocks, type);
@@ -207,7 +217,7 @@ class Edit extends Component {
             })}
           </div>
         )}
-        {selected && !required && (
+        {selected && !required && editable && (
           <Button
             icon
             basic

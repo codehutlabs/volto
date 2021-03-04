@@ -64,66 +64,101 @@ exports[`Comments renders a comments component 1`] = `
       method="post"
       onSubmit={[Function]}
     >
-      <div
-        className="ui raised segments"
+      <fieldset
+        className="invisible"
+        disabled={false}
       >
         <div
-          className="ui segment"
+          className="ui raised segments"
         >
           <div
-            className="ui segment primary"
+            className="ui segment"
           >
-            <h1
-              style={
-                Object {
-                  "fontSize": "16px",
-                }
-              }
+            <div
+              className="ui segment primary"
             >
-               
-              Comment
-            </h1>
+              <h1
+                style={
+                  Object {
+                    "fontSize": "16px",
+                  }
+                }
+              >
+                 
+                Comment
+              </h1>
+            </div>
+            <div
+              className="inline required field textarea"
+            >
+              <div
+                className="ui grid"
+              >
+                <div
+                  className="stretched row"
+                >
+                  <div
+                    className="four wide column"
+                  >
+                    <div
+                      className="wrapper"
+                    >
+                      <label
+                        htmlFor="field-comment"
+                        id="fieldset-undefined-field-label-comment"
+                      >
+                        Comment
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    className="eight wide column"
+                  >
+                    <textarea
+                      id="field-comment"
+                      name="comment"
+                      onChange={[Function]}
+                      onInput={[Function]}
+                      rows={3}
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            className="mocked-textarea-widget"
-            id="mocked-field-comment"
+            className="ui clearing segment actions"
           >
-            Comment
-             - 
-            No description
+            <button
+              aria-label="Comment"
+              className="ui basic primary right floated button"
+              onClick={[Function]}
+              title="Comment"
+              type="submit"
+            >
+              <svg
+                className="icon circled"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": undefined,
+                  }
+                }
+                onClick={null}
+                style={
+                  Object {
+                    "fill": "currentColor",
+                    "height": "30px",
+                    "width": "auto",
+                  }
+                }
+                viewBox=""
+                xmlns=""
+              />
+            </button>
           </div>
         </div>
-        <div
-          className="ui clearing segment actions"
-        >
-          <button
-            aria-label="Comment"
-            className="ui basic primary right floated button"
-            onClick={[Function]}
-            title="Comment"
-            type="submit"
-          >
-            <svg
-              className="icon circled"
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": undefined,
-                }
-              }
-              onClick={null}
-              style={
-                Object {
-                  "fill": "currentColor",
-                  "height": "30px",
-                  "width": "auto",
-                }
-              }
-              viewBox=""
-              xmlns=""
-            />
-          </button>
-        </div>
-      </div>
+      </fieldset>
     </form>
   </div>
 </div>

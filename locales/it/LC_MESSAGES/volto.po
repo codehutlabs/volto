@@ -199,6 +199,7 @@ msgstr "E-mail e password distinguono entrambi le maiuscole dalle minuscole, ver
 msgid "Breadcrumbs"
 msgstr "Briciole di pane"
 
+#: components/manage/Blocks/HeroImageLeft/Edit
 #: components/manage/Contents/ContentsUploadModal
 #: components/manage/Sidebar/ObjectBrowserNav
 msgid "Browse"
@@ -564,6 +565,7 @@ msgstr "Vuoi veramente eliminare l'utente {username}?"
 msgid "Do you really want to delete this item?"
 msgstr "Vuoi veramente eliminare questo elemento?"
 
+#: components/manage/Multilingual/TranslationObject
 #: components/manage/Sidebar/Sidebar
 msgid "Document"
 msgstr "Pagina"
@@ -866,6 +868,7 @@ msgstr "Se hai dimenticato la tua password, {forgotpassword}."
 msgid "If you you do not have an account here, head over to the {registrationform}."
 msgstr "Se non ti sei ancora iscritto, compila il {registrationform} per diventare un collaboratore."
 
+#: components/manage/Blocks/HeroImageLeft/Edit
 #: components/manage/Blocks/Image/ImageSidebar
 #: components/manage/Blocks/LeadImage/LeadImageSidebar
 msgid "Image"
@@ -1919,6 +1922,10 @@ msgstr "Numero totale degli oggetti di tutte le cache"
 msgid "Total number of objects in the database"
 msgstr "Numero totale di oggetti nel database"
 
+#: components/manage/Add/Add
+msgid "Translate to"
+msgstr "Traduci in"
+
 #: components/manage/Toolbar/Types
 msgid "Translate to {lang}"
 msgstr "Traduci in {lang}"
@@ -2010,6 +2017,10 @@ msgstr "Carica file"
 #: components/manage/Contents/ContentsUploadModal
 msgid "Uploading files"
 msgstr "Caricamento dei files"
+
+#: components/manage/Blocks/HeroImageLeft/Edit
+msgid "Uploading image"
+msgstr "Immagine in caricamento"
 
 #: components/manage/Widgets/QuerystringWidget
 #: components/manage/Widgets/SchemaWidget
@@ -2192,6 +2203,14 @@ msgstr "Hai dimenticato la tua password?"
 msgid "common"
 msgstr "Comuni"
 
+#: components/manage/Multilingual/CompareLanguages
+msgid "compare_to"
+msgstr "Confronta con"
+
+#: components/manage/Multilingual/CompareLanguages
+msgid "compare_to_nothing"
+msgstr "Con niente"
+
 #: components/manage/Blocks/Block/Edit
 #: components/manage/Blocks/Block/EditBlockWrapper
 msgid "delete"
@@ -2219,7 +2238,7 @@ msgstr "Bozza"
 
 #: helpers/MessageLabels/MessageLabels
 msgid "email"
-msgstr ""
+msgstr "E-mail"
 
 #: components/theme/View/EventView
 msgid "event_alldates"
@@ -2271,7 +2290,7 @@ msgstr "Immagine"
 
 #: helpers/MessageLabels/MessageLabels
 msgid "integer"
-msgstr "intero"
+msgstr "Il valore deve essere un numero intero"
 
 #: components/manage/Contents/ContentsItem
 msgid "intranet"
@@ -2303,11 +2322,11 @@ msgstr "Mappa"
 
 #: components/manage/Widgets/SchemaWidget
 msgid "maxLength"
-msgstr ""
+msgstr "La lunghezza massima è {len}."
 
 #: components/manage/Widgets/SchemaWidget
 msgid "maximum"
-msgstr ""
+msgstr "Il valore massimo è {len}."
 
 #: config/Blocks
 msgid "media"
@@ -2315,11 +2334,11 @@ msgstr "media"
 
 #: components/manage/Widgets/SchemaWidget
 msgid "minLength"
-msgstr ""
+msgstr "La lunghezza minima è {len}."
 
 #: components/manage/Widgets/SchemaWidget
 msgid "minimum"
-msgstr ""
+msgstr "Il valore minimo è {len}."
 
 #: config/Blocks
 msgid "mostUsed"
@@ -2331,7 +2350,7 @@ msgstr "Nessun stato di workflow"
 
 #: helpers/MessageLabels/MessageLabels
 msgid "number"
-msgstr "numero"
+msgstr "Il valore deve essere un numero"
 
 #: components/manage/Widgets/RecurrenceWidget/ByMonthDayField
 #: components/manage/Widgets/RecurrenceWidget/ByYearField
@@ -2532,7 +2551,7 @@ msgstr "Indice dei contenuti"
 
 #: helpers/MessageLabels/MessageLabels
 msgid "url"
-msgstr ""
+msgstr "Il valore deve essere un url valido (www.something.com or http(s)://www.something.com)"
 
 #: components/manage/Toolbar/PersonalTools
 msgid "user avatar"

@@ -6,6 +6,8 @@
 
 ### Feature
 
+
+- babel view [giuliaghisini]
 ### Bugfix
 
 ### Internal

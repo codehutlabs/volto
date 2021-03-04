@@ -55,6 +55,7 @@ class Edit extends Component {
     showRestricted: PropTypes.bool,
     formTitle: PropTypes.string,
     formDescription: PropTypes.string,
+    editable: PropTypes.bool,
   };
 
   /**
@@ -64,6 +65,7 @@ class Edit extends Component {
    */
   static defaultProps = {
     detached: false,
+    editable: true,
   };
 
   /**
@@ -232,6 +234,7 @@ class Edit extends Component {
     return (
       <>
         <Editor
+          readOnly={!this.props.editable}
           onChange={this.onChange}
           editorState={this.state.editorState}
           plugins={[

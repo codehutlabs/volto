@@ -56,6 +56,10 @@ export {
 } from '@plone/volto/helpers/Vocabularies/Vocabularies';
 
 export Helmet from './Helmet/Helmet';
+export {
+  changeLanguage,
+  changeLanguageCookies,
+} from '@plone/volto/helpers/Language/Language';
 export FormValidation from './FormValidation/FormValidation';
 export {
   difference,
