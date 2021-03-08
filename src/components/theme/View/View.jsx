@@ -19,6 +19,7 @@ import {
   BodyClass,
   getBaseUrl,
   getLayoutFieldname,
+  toPublicURL,
 } from '@plone/volto/helpers';
 
 /**
@@ -230,6 +231,37 @@ class View extends Component {
           )}
           <title>{this.props.content.title}</title>
           <meta name="description" content={this.props.content.description} />
+
+          <meta property="og:title" content={this.props.content.title} />
+          <meta
+            property="og:url"
+            content={toPublicURL(this.props.content['@id'])}
+          />
+          {this.props.content.image?.scales?.large?.download && (
+            <>
+              <meta
+                property="og:image"
+                content={toPublicURL(
+                  this.props.content.image?.scales?.large?.download,
+                )}
+              />
+              <meta
+                property="og:image:width"
+                content={this.props.content.image?.scales?.large?.width}
+              />
+              <meta
+                property="og:image:height"
+                content={this.props.content.image?.scales?.large?.height}
+              />
+            </>
+          )}
+          {this.props.content.description && (
+            <meta
+              property="og:description"
+              content={this.props.content.description}
+            />
+          )}
+          <meta name="twitter:card" content="summary_large_image" />
         </Helmet>
         {/* Body class if displayName in component is set */}
         <BodyClass
