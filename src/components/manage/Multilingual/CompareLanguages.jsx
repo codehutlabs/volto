@@ -1,6 +1,7 @@
 import React from 'react';
 import { Label, Grid, Dropdown } from 'semantic-ui-react';
 import { defineMessages, useIntl } from 'react-intl';
+
 import config from '@plone/volto/registry';
 
 const messages = defineMessages({
