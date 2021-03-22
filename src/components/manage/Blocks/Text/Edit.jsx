@@ -51,11 +51,11 @@ class Edit extends Component {
     onFocusPreviousBlock: PropTypes.func.isRequired,
     onFocusNextBlock: PropTypes.func.isRequired,
     onSelectBlock: PropTypes.func.isRequired,
+    editable: PropTypes.bool,
     allowedBlocks: PropTypes.arrayOf(PropTypes.string),
     showRestricted: PropTypes.bool,
     formTitle: PropTypes.string,
     formDescription: PropTypes.string,
-    editable: PropTypes.bool,
   };
 
   /**

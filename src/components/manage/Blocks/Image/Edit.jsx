@@ -66,16 +66,6 @@ class Edit extends Component {
     handleKeyDown: PropTypes.func.isRequired,
     createContent: PropTypes.func.isRequired,
     openObjectBrowser: PropTypes.func.isRequired,
-    editable: PropTypes.bool,
-  };
-
-  /**
-   * Default properties
-   * @property {Object} defaultProps Default properties.
-   * @static
-   */
-  static defaultProps = {
-    editable: true,
   };
 
   state = {

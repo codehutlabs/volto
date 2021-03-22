@@ -1,10 +1,10 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import config from '@plone/volto/registry';
 
 import { getTranslationLocator, getContent } from '@plone/volto/actions';
 import { flattenToAppURL, changeLanguage } from '@plone/volto/helpers';
+import config from '@plone/volto/registry';
 
 let locales = {};
 

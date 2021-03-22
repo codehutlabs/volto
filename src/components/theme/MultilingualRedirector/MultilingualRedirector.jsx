@@ -3,8 +3,8 @@ import { Redirect } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 import cookie from 'react-cookie';
-import config from '@plone/volto/registry';
 import { changeLanguage } from '@plone/volto/helpers';
+import config from '@plone/volto/registry';
 
 let locales = {};
 

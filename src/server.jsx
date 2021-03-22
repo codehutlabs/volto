@@ -176,7 +176,6 @@ server.get('/*', (req, res) => {
       const updatedLang =
         store.getState().content.data?.language?.token ||
         config.settings.defaultLanguage;
-
       store.dispatch(store.dispatch(changeLanguage(updatedLang, locales)));
 
       const context = {};

@@ -967,9 +967,9 @@ class Form extends Component {
                                   block,
                                 )}
                                 manage={this.props.isAdminForm}
+                                editable={this.props.editable}
                                 allowedBlocks={this.props.allowedBlocks}
                                 showRestricted={this.props.showRestricted}
-                                editable={this.props.editable}
                               />
                             </div>
                           </div>

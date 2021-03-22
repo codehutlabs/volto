@@ -6,8 +6,6 @@
 
 ### Feature
 
-
-- babel view [giuliaghisini]
 ### Bugfix
 
 - fixed italian translations for block 'Maps" @giuliaghisini
@@ -175,6 +173,8 @@
 
 ### Feature
 
+
+- babel view [giuliaghisini]
 - Simple optional critical-CSS inclusion feature (without the actual building of
   the critical CSS) @silviubogan @tiberiuichim @nileshgulia1
 - added support for allowedBlocks and showRestricted for BlockChooser in Form @giuliaghisini
