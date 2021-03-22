@@ -7,10 +7,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import cx from 'classnames';
-import config from '@plone/volto/registry';
 import { flattenToAppURL } from '@plone/volto/helpers';
-
 import Image from '@plone/volto/components/theme/Image/Image';
+
+import config from '@plone/volto/registry';
 
 /**
  * View image block class.
