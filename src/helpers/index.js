@@ -73,6 +73,7 @@ export {
 } from '@plone/volto/helpers/Utils/Utils';
 export { messages } from './MessageLabels/MessageLabels';
 export { asyncConnect } from './AsyncConnect';
+export { isAdminUser } from './User/User';
 // export { injectLazyLibs } from './Loadable/Loadable';
 
 export { getImageAttributes } from './Image/Image';
