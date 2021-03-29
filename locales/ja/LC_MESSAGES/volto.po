@@ -2606,4 +2606,4 @@ msgstr "「{title}」を削除しました。"
 
 #: components/theme/Comments/Comments
 msgid "{user} says:"
-msgstr "{user} :"
+msgstr ""

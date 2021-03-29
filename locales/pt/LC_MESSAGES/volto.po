@@ -2607,4 +2607,4 @@ msgstr "{title} foi eliminado."
 
 #: components/theme/Comments/Comments
 msgid "{user} says:"
-msgstr "{user} diz:"
+msgstr ""

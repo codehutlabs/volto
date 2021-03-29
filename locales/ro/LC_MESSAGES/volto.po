@@ -2599,4 +2599,4 @@ msgstr "{title} a fost șters."
 
 #: components/theme/Comments/Comments
 msgid "{user} says:"
-msgstr "{user} spune:"
+msgstr ""

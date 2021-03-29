@@ -2606,4 +2606,4 @@ msgstr "{title} ezabatu egin da."
 
 #: components/theme/Comments/Comments
 msgid "{user} says:"
-msgstr "{user} erabiltzaileak zera dio:"
+msgstr ""

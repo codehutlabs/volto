@@ -2614,4 +2614,4 @@ msgstr "{title} wurde gelöscht."
 
 #: components/theme/Comments/Comments
 msgid "{user} says:"
-msgstr "{user} sagt:"
+msgstr ""
