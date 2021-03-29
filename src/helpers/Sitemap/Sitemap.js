@@ -8,6 +8,7 @@ import { map } from 'lodash';
 import cookie from 'react-cookie';
 import zlib from 'zlib';
 import config from '@plone/volto/registry';
+import { toPublicURL } from '@plone/volto/helpers';
 
 /**
  * Generate sitemap
@@ -18,7 +19,6 @@ import config from '@plone/volto/registry';
 export const generateSitemap = (req) =>
   new Promise((resolve) => {
     const { settings } = config;
-    const url = `${req.protocol}://${req.get('Host')}`;
     const request = superagent.get(
       `${settings.apiPath}/@search?metadata_fields=modified&b_size=100000000`,
     );
@@ -34,10 +34,8 @@ export const generateSitemap = (req) =>
         const items = map(
           body.items,
           (item) =>
-            `  <url>\n    <loc>${item['@id'].replace(
-              settings.apiPath,
-              url,
-            )}</loc>\n    <lastmod>${item.modified}</lastmod>\n  </url>`,
+            `  <url>\n    <loc>${toPublicURL(item['@id'])}</loc>\n
+            <lastmod>${item.modified}</lastmod>\n  </url>`,
         );
         const result = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">\n${items.join(
           '\n',
