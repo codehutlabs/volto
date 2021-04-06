@@ -284,8 +284,9 @@ class RecurrenceWidget extends Component {
 
   getWeekday = (number) => {
     var day = null;
+    const n = number === -1 ? 6 : number; //because sunday for moment has index 0, but for rrule has index 6
     Object.keys(Days).forEach((d) => {
-      if (Days[d].weekday === number) {
+      if (Days[d].weekday === n) {
         day = Days[d];
       }
     });
