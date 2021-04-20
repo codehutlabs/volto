@@ -41,9 +41,9 @@ exports[`Html renders a html component 1`] = `
       name="theme-color"
     />
     <link
-      href="/icon_128x128.png"
+      href="/icon_120x120.png"
       rel="apple-touch-icon"
-      sizes="128x128"
+      sizes="120x120"
     />
     <meta
       content="yes"

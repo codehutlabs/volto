@@ -112,9 +112,9 @@ class Html extends Component {
           <link href="/manifest.json" rel="manifest" />
           <meta content="#ffffff" name="theme-color" />
           <link
-            href="/icon_128x128.png"
+            href="/icon_120x120.png"
             rel="apple-touch-icon"
-            sizes="128x128"
+            sizes="120x120"
           />
 
           <meta name="apple-mobile-web-app-capable" content="yes" />
