@@ -37,7 +37,7 @@ module.exports = {
       short_name: 'Volto',
       description: 'A Volto App which Uses Plone As Backend',
       theme_color: '#ffffff',
-      background_color: '#000000',
+      background_color: '#062e3b',
       inject: false,
       fingerprints: false,
       icons: [
