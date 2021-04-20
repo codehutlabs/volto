@@ -10,6 +10,7 @@ import { loadableReady } from '@loadable/component';
 import routes from '~/routes';
 import config from '@plone/volto/registry';
 import '~/theme';
+import * as serviceWorker from '../serviceWorker';
 
 import configureStore from '@plone/volto/store';
 import { Api, persistAuthToken, ScrollToTop } from '@plone/volto/helpers';
@@ -57,3 +58,7 @@ export default () => {
     );
   });
 };
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below or vice-versa.
+serviceWorker.register();

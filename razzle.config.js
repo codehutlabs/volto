@@ -10,6 +10,8 @@ const RelativeResolverPlugin = require('./webpack-relative-resolver');
 const createAddonsLoader = require('./create-addons-loader');
 const AddonConfigurationRegistry = require('./addon-registry');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
+const { GenerateSW } = require('workbox-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 const fileLoaderFinder = makeLoaderFinder('file-loader');
 const babelLoaderFinder = makeLoaderFinder('babel-loader');
@@ -237,6 +239,7 @@ const defaultPlugins = [
   { object: require('./webpack-less-plugin')({ registry }) },
   { object: require('./webpack-sentry-plugin') },
   { object: require('./webpack-svg-plugin') },
+  { object: require('./webpack-workbox-plugin') },
   { object: require('./webpack-bundle-analyze-plugin') },
   { object: require('./jest-extender-plugin') },
 ];

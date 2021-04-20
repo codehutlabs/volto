@@ -109,6 +109,14 @@ class Html extends Component {
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="generator" content="Volto - http://plone.org" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link href="/manifest.json" rel="manifest" />
+          <meta content="#ffffff" name="theme-color" />
+          <link
+            href="/icon_128x128.png"
+            rel="apple-touch-icon"
+            sizes="128x128"
+          />
+
           <meta name="apple-mobile-web-app-capable" content="yes" />
           {process.env.NODE_ENV === 'production' && criticalCss && (
             <style
