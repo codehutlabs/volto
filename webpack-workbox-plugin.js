@@ -33,7 +33,7 @@ module.exports = {
     });
 
     const manifest = new WebpackPwaManifest({
-      name: 'Volto PWA App',
+      name: 'Volto App',
       short_name: 'Volto',
       description: 'A Volto App which Uses Plone As Backend',
       theme_color: '#ffffff',
@@ -44,6 +44,11 @@ module.exports = {
         {
           src: path.resolve('public/logo.png'),
           sizes: [57, 60, 72, 76, 114, 120, 144, 152, 180, 16, 32, 96, 192], // multiple sizes
+        },
+        {
+          src: path.resolve('public/logo.png'),
+          size: '1024x1024',
+          purpose: 'maskable',
         },
       ],
     });
